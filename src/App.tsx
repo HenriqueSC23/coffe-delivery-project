@@ -7,13 +7,13 @@ import { CartContextProvider } from './contexts/CartContext'
 
 export function App() {
   return (
-    // <ThemeProvider theme={defaultTheme}>
-    <HashRouter>
-      <CartContextProvider>
-        <Router />
-      </CartContextProvider>
-    </HashRouter>
-    // <GlobalStyle />
-    // </ThemeProvider>
+    <ThemeProvider theme={defaultTheme}>
+      <HashRouter>
+        <CartContextProvider>
+          <Router />
+        </CartContextProvider>
+      </HashRouter>
+      <GlobalStyle />
+    </ThemeProvider>
   )
 }
